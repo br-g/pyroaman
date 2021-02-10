@@ -1,4 +1,4 @@
-<img src="artwork/logo.png" height=100px style="margin-bottom: -14px;">
+<img src="https://raw.githubusercontent.com/br-g/pyroaman/main/artwork/logo.png" height=100px style="margin-bottom: -14px;">
 
 Pyroaman helps you explore Roam Research databases with Python.
 
