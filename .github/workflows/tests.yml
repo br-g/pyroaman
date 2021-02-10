@@ -1,0 +1,41 @@
+on: push
+
+name: tests
+
+jobs:
+  lint:
+    name: lint
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: checkout
+      uses: actions/checkout@v1
+
+    - uses: actions/setup-python@v1
+      with:
+        python-version: '3.6'
+        architecture: 'x64'
+
+    - name: install and lint
+      run: |
+        sudo apt-get install python3-setuptools
+        make install
+        make lint
+  type_check:
+    name: check types
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: checkout
+      uses: actions/checkout@v1
+
+    - uses: actions/setup-python@v1
+      with:
+        python-version: '3.6'
+        architecture: 'x64'
+
+    - name: install and check types
+      run: |
+        sudo apt-get install python3-setuptools
+        make install
+        make type_check
