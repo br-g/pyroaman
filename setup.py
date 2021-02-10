@@ -6,13 +6,13 @@ with open('README.md', 'r') as fh:
 
 setup(
     name='pyroaman',
-    version='0.1.0',
+    version='0.1.1',
     license='MIT',
     description='Roam Research with Python',
     author = 'Bruno Godefroy',
     author_email='brgo@mail.com',
     url = 'https://github.com/br-g/pyroaman',
-    download_url = 'https://github.com/br-g/pyroaman/archive/v0.1.0.tar.gz',
+    download_url = 'https://github.com/br-g/pyroaman/archive/v0.1.1.tar.gz',
     keywords = ['Roam Research'],
     long_description=long_description,
     long_description_content_type='text/markdown',
