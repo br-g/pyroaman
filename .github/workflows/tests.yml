@@ -34,8 +34,7 @@ jobs:
         python-version: '3.6'
         architecture: 'x64'
 
-    - name: install and check types
+    - name: check types
       run: |
         sudo apt-get install python3-setuptools
-        make install
         make type_check
